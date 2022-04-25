@@ -51,3 +51,6 @@ outcome = classification labels and their respective securities
 
 ![gf](https://user-images.githubusercontent.com/82911284/165191983-dead7c3c-30b7-4f68-bc57-3e608df501bb.png)
 
+![gmf](https://user-images.githubusercontent.com/82911284/165192166-f6cf594c-c50c-4ef8-9777-7636e954f94e.png)
+
+
