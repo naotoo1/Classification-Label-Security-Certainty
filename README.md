@@ -1,19 +1,30 @@
 # Classification-Label-Security-Certainty
 
 Classification label security determines the extent to which predicted labels from classification results can be trusted. The uncertainty surrounding classification labels is resolved by the security to which the classification is made. Therefore, classification label security is very significant for decision-making whenever we are encountered with a classification task.
+
 This implementation investigates the determination of the classification label security by utilizing fuzzy probabilistic assignments of Fuzzy c-means
-
 This code contains the module (label_security1.py) for computing the classification label security with examples for GLVQ, GMLVQ and CELVQ models.
-
 The models are first trained using a training data and tested on a test data.
 
 So for every prediction from the models using a test data, the code returns the labels and their respective security.
 
-The module is imported with the LabelSecurity Class, LabelSecurityM Class and LabelSecurityLM Class which is used to the compute the classification label security by calling on the methods in these Classes.
+The module is imported with the **LabelSecurity Class** ,**LabelSecurityM Class** and **LabelSecurityLM Class** which is used to the compute the classification label security by calling on the methods in these Classes.
 
 LabelSecurity Class for non matrix LVQ, LabelSecurityM for matrix LVQ and LabelSecurityLM for localized matrix LVQ
 
 Examples are shown in the following python files (Iris_security_glvq.py, Iris_security_gmlvq.py and Iris_security_celvq.py)
+
+```
+.
+├── contour.py                               # Compiled files (alternatively `dist`)
+├── iris_securitycelvq.py                    # Documentation files (alternatively `doc`)
+├── iris_securityglvq.py                     # Source files (alternatively `lib` or `app`)
+├── iris_securitygmlvq.py                    # Automated tests (alternatively `spec` or `tests`)
+├── label_security1.py                       # Tools and utilities
+├── protocert.py                             # 
+└── README.md
+```
+
 
 The prerequisites needed for the code and outcome
 
