@@ -7,12 +7,12 @@ Classification label security determines the extent to which predicted labels fr
 
 ```
 .
-├── contour.py                               # Compiled files (alternatively `dist`)
-├── iris_securitycelvq.py                    # Documentation files (alternatively `doc`)
-├── iris_securityglvq.py                     # Source files (alternatively `lib` or `app`)
-├── iris_securitygmlvq.py                    # Automated tests (alternatively `spec` or `tests`)
-├── label_security1.py                       # Tools and utilities
-├── protocert.py                             # 
+├── contour.py                               # Visualization of plots
+├── iris_securitycelvq.py                    # Iris_test set example with celvq
+├── iris_securityglvq.py                     # Iris_test set example with glvq
+├── iris_securitygmlvq.py                    # Iris_test set example with gmlvq
+├── label_security1.py                       # Main code
+├── protocert.py                             # Auxilliary code
 └── README.md
 ```
 
