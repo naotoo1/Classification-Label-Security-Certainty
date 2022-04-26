@@ -61,8 +61,17 @@ param x: predicted labels from the model using the test-set
 outcome = classification labels and their respective securities
 ```
 
+<p style='align:center'>
+<img src='https://user-images.githubusercontent.com/82911284/165191983-dead7c3c-30b7-4f68-bc57-3e608df501bb.png'/>
+</p>
 
-![gf](https://user-images.githubusercontent.com/82911284/165191983-dead7c3c-30b7-4f68-bc57-3e608df501bb.png)
+<p style='align:center'>
+<img src='https://user-images.githubusercontent.com/82911284/165192166-f6cf594c-c50c-4ef8-9777-7636e954f94e.png'/>
+</p>
+
+<p style='align:center'>
+<img src='https://user-images.githubusercontent.com/82911284/165192342-45d9fc5a-93d9-4d14-8be3-b2d281032af5.png'/>
+</p>
 
 ![gmf](https://user-images.githubusercontent.com/82911284/165192166-f6cf594c-c50c-4ef8-9777-7636e954f94e.png)
 
