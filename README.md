@@ -1,7 +1,7 @@
 # Classification-Label-Security-Certainty
 
 Classification label security determines the extent to which predicted labels from classification results can be trusted. The uncertainty surrounding classification labels is resolved by the security to which the classification is made. Therefore, classification label security is very significant for decision-making whenever we are encountered with a classification task.
-This investigates the determination of the classification label security by utilizing fuzzy probabilistic assignments of Fuzzy c-means
+This implementation investigates the determination of the classification label security by utilizing fuzzy probabilistic assignments of Fuzzy c-means
 
 This code contains the module (label_security1.py) for computing the classification label security with examples for GLVQ, GMLVQ and CELVQ models.
 
