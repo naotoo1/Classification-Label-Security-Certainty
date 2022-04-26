@@ -27,40 +27,39 @@ Examples are shown in the following python files (Iris_security_glvq.py, Iris_se
 
 
 The prerequisites needed for the code and outcome
-
+Method_1
+```Python
 LabelSecurity Class
 
 Params = (test set, predicted labels of the test set, prototypes from the trained model using the train-set, fuzziness_parameter(default=2))
-
-Methods
 
 label_sec_f(x)
 
 param x = predicted labels from the model using the test-set
 outcome = classification labels and their respective securities
-
+```
+Method_2
+```Python
 LabelSecurityM Class
 
 Params = (test set, predicted labels of the test set, prototypes from the trained model using the train-set, omega_matrix from the trained model, fuzziness_parameter(default=2))
-
-Methods
 
 label_security_m_f(x)
 
 param x = predicted labels from the model using the test-set
 outcome = classification labels and their respective securities
-
+```
+Method_3
+```Python
 LabelSecurityLM Class
 
 Params = (test set, predicted labels of the test set, prototypes from the trained model using the train-set, List containing local omega_matrices from the trained model, fuzziness_parameter(default=2))
-
-Methods
 
 label_security_lm_f(x)
 
 param x: predicted labels from the model using the test-set
 outcome = classification labels and their respective securities
-
+```
 
 
 ![gf](https://user-images.githubusercontent.com/82911284/165191983-dead7c3c-30b7-4f68-bc57-3e608df501bb.png)
