@@ -51,5 +51,8 @@ Classification results with reject and non-reject options based on the chow's ap
 <img src='https://user-images.githubusercontent.com/82911284/165192342-45d9fc5a-93d9-4d14-8be3-b2d281032af5.png'/>
 </p>
 
-A simulated results from multiple reject thresholds for improving classification reliability using the class related threshold is shown below
+A simulated results from multiple reject thresholds for improving classification reliability using the CRT vs Chow is shown below for GLVQ
+
+![Figure_4](https://user-images.githubusercontent.com/82911284/165868376-edfd75fd-dc67-41f1-a75a-305f2a72e06f.png)
+
 
