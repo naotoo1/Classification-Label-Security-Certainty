@@ -8,10 +8,14 @@ Classification label security determines the extent to which predicted labels fr
 ```
 .
 ├── contour.py                               # Visualization of plots
+├── crt.py                                   # optimised algorithm for multiple reject thresholds for improving classification reliability
+├── crt_chow_iris.py                         # simulation of crt vs chow in optimal search of for threshold for improving classification reliability
 ├── iris_securitycelvq.py                    # Iris_test set example with celvq
 ├── iris_securityglvq.py                     # Iris_test set example with glvq
 ├── iris_securitygmlvq.py                    # Iris_test set example with gmlvq
-├── label_security1.py                       # Main code
+├── iris_securitycelvq.py                    # Iris_test set example with celvq
+├── procertnew.py                            # auxilliary script for crt usage
+├── label_security1.py                       # classification label security/certainty for lvq
 ├── protocert.py                             # Auxilliary code
 └── README.md
 ```
@@ -25,47 +29,16 @@ So for every prediction from the models using a test data, the code returns the 
 
 The module is imported with the **LabelSecurity Class** ,**LabelSecurityM Class** and **LabelSecurityLM Class** which is used to the compute the classification label security by calling on the methods in these Classes.
 
-LabelSecurity Class for non matrix LVQ, LabelSecurityM for matrix LVQ and LabelSecurityLM for localized matrix LVQ
+LabelSecurity Class for **non matrix LVQ**, LabelSecurityM for **matrix LVQ** and LabelSecurityLM for **localized matrix LVQ**
 
 Examples are shown in the following python files (Iris_security_glvq.py, Iris_security_gmlvq.py and Iris_security_celvq.py)
 
-The prerequisites needed for the code and outcome
 
-Method_1
 
-```Python
-LabelSecurity Class
-
-Params = (test set, predicted labels of the test set, prototypes from the trained model using the train-set, fuzziness_parameter(default=2))
-
-label_sec_f(x)
-
-param x = predicted labels from the model using the test-set
-outcome = classification labels and their respective securities
-```
-Method_2
-```Python
-LabelSecurityM Class
-
-Params = (test set, predicted labels of the test set, prototypes from the trained model using the train-set, omega_matrix from the trained model, fuzziness_parameter(default=2))
-
-label_security_m_f(x)
-
-param x = predicted labels from the model using the test-set
-outcome = classification labels and their respective securities
-```
-Method_3
-```Python
-LabelSecurityLM Class
-
-Params = (test set, predicted labels of the test set, prototypes from the trained model using the train-set, List containing local omega_matrices from the trained model, fuzziness_parameter(default=2))
-
-label_security_lm_f(x)
-
-param x: predicted labels from the model using the test-set
-outcome = classification labels and their respective securities
-```
 ## Visualization / Results
+
+Classification results with reject and non-reject options based on the chow's approach (out of a simulated test results with a security thresh-hold of 0.7)  is shown below for the GLVQ, GMLVQ and CELVQ models respectively.
+
 <p style='align:center'>
 <img src='https://user-images.githubusercontent.com/82911284/165191983-dead7c3c-30b7-4f68-bc57-3e608df501bb.png'/>
 </p>
@@ -78,4 +51,5 @@ outcome = classification labels and their respective securities
 <img src='https://user-images.githubusercontent.com/82911284/165192342-45d9fc5a-93d9-4d14-8be3-b2d281032af5.png'/>
 </p>
 
+A simulated results from multiple reject thresholds for improving classification reliability using the class related threshold is shown below
 
