@@ -1,6 +1,6 @@
 # Classification-Label-Security-Certainty
 
-## Introduction
+## What is it?
 Classification label security determines the extent to which predicted labels from classification results can be trusted. The uncertainty surrounding classification labels is resolved by the security to which the classification is made. Therefore, classification label security is very significant for decision-making whenever we are encountered with a classification task.
 
 ## File structure
@@ -20,18 +20,15 @@ Classification label security determines the extent to which predicted labels fr
 └── README.md
 ```
 
-## Implementation
-This implementation investigates the determination of the classification label security by utilizing fuzzy probabilistic assignments of Fuzzy c-means
-This code contains the module (label_security1.py) for computing the classification label security with examples for GLVQ, GMLVQ and CELVQ models.
-The models are first trained using a training data and tested on a test data.
+## How to use?
+This implementation investigates the determination of the classification label security by utilizing fuzzy probabilistic assignments of Fuzzy c-means.
+The ```label_security1.py``` script is used for computing the classification label security of lvq with examples for **GLVQ**, **GMLVQ** and **CELVQ** models.
 
-So for every prediction from the models using a test data, the code returns the labels and their respective security.
+The models are first trained using a training data and tested on a test data. So for every prediction from the models using a test data, the code returns the classification labels and their respective security/certainty.
 
-The module is imported with the **LabelSecurity Class** ,**LabelSecurityM Class** and **LabelSecurityLM Class** which is used to the compute the classification label security by calling on the methods in these Classes.
+The module is imported with the **LabelSecurity Class** ,**LabelSecurityM Class** and **LabelSecurityLM Class** which is used to the compute the classification label security by calling on the methods in these Classes. LabelSecurity Class is used for **non matrix LVQ**, LabelSecurityM used for **matrix LVQ** and LabelSecurityLM used for **localized matrix LVQ**
 
-LabelSecurity Class for **non matrix LVQ**, LabelSecurityM for **matrix LVQ** and LabelSecurityLM for **localized matrix LVQ**
-
-Examples are shown in the following python files (Iris_security_glvq.py, Iris_security_gmlvq.py and Iris_security_celvq.py)
+Examples are shown in the following python files (```Iris_security_glvq.py```, ```Iris_security_gmlvq.py``` and  ```Iris_security_celvq.py```)
 
 
 
@@ -51,6 +48,7 @@ Classification results with reject and non-reject options based on the chow's ap
 <img src='https://user-images.githubusercontent.com/82911284/165192342-45d9fc5a-93d9-4d14-8be3-b2d281032af5.png'/>
 </p>
 
+## Simulation
 
 A simulated results from multiple reject thresholds for improving classification reliability using the CRT vs Chow is shown below for GLVQ
 
