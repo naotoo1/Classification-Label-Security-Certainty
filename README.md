@@ -25,7 +25,7 @@ Classification label security determines the extent to which predicted labels fr
 This implementation investigates the determination of the classification label security by utilizing fuzzy probabilistic assignments of Fuzzy c-means.
 The ```label_security1.py``` script is used for computing the classification label security of lvq with examples for **GLVQ**, **GMLVQ** and **CELVQ** models.
 
-The models are first trained using a training data and tested on a test data. So for every prediction from the models using a test data, the code returns the classification labels and their respective security/certainty. For optimal results,the fuzzifier(m) which is a hyperparamter in the classification label security computation is searched optimally by the method in ``optimised_m.py```. The search for an optimal m is based on the transitive fact which explains that the reliability of a model is linked to the preformance of the model which inturn correlates the security of the model.
+The models are first trained using a training data and tested on a test data. So for every prediction from the models using a test data, the code returns the classification labels and their respective security/certainty. For optimal results,the fuzzifier(m) which is a hyperparamter in the classification label security computation is searched optimally by the method in ```optimised_m.py```. The search for an optimal m is based on the transitive fact which explains that the reliability of a model is linked to the preformance of the model which inturn correlates the security of the model.
 
 The module is imported with the **LabelSecurity Class** ,**LabelSecurityM Class** and **LabelSecurityLM Class** which is used to the compute the classification label security by calling on the methods in these Classes. LabelSecurity Class is used for **non matrix LVQ**, LabelSecurityM used for **matrix LVQ** and LabelSecurityLM used for **localized matrix LVQ**
 
@@ -62,6 +62,8 @@ A simulated results from multiple reject thresholds for improving classification
  
  The optimal choice of hyperparameter m as against the default choice of m=2 is shown below for ```label_security1.py``` with the iris data set set using 
  **GLVQ**, **GMLVQ** and **CELVQ**.
+ 
+ ![clsoptimedm](https://user-images.githubusercontent.com/82911284/167135492-888cca27-87a4-49d9-855e-6364910cd541.png)
 
 
 ## References
