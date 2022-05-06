@@ -58,6 +58,7 @@ A simulated results from multiple reject thresholds for improving classification
  
  Below is a plot indicating a diminishing trend of the classification lable security of a sample data point with increasing m hyperparameter for ```label_security1.py```
  
+ ![class_m](https://user-images.githubusercontent.com/82911284/167135470-8875729d-a0c6-4486-b623-2a31e7f23816.png)
  
  The optimal choice of hyperparameter m as against the default choice of m=2 is shown below for ```label_security1.py``` with the iris data set set using 
  **GLVQ**, **GMLVQ** and **CELVQ**.
