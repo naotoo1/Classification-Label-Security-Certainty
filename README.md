@@ -1,3 +1,9 @@
+[![Python: 3.9](https://img.shields.io/badge/python-3.9-blue.svg)](https://www.python.org/downloads/release/python-390/)
+[![Pytorch: 1.11](https://img.shields.io/badge/pytorch-1.11-blue.svg)](https://pytorch.org/blog/pytorch-1.11-released/)
+[![Prototorch: 0.7.3](https://img.shields.io/badge/prototorch-0.7.3-blue.svg)](https://pypi.org/project/prototorch/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+
+
 # Classification-Label-Security-Certainty
 
 ## What is it?
