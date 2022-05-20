@@ -7,7 +7,7 @@
 # Classification-Label-Security-Certainty
 
 ## What is it?
-Classification label security determines the extent to which predicted labels from LVQs classification results can be trusted.
+Classification label security is prototype based recall proceedure that determines the extent to which predicted labels from LVQs classification results can be trusted.
 
 ## File structure
 
