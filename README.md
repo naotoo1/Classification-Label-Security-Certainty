@@ -13,12 +13,12 @@ Classification label security is prototype based recall proceedure that determin
 
 ```
 .
-├── contour.py                               # Visualization of contour plots
+├── contour.py                               # Visualization of plots
 ├── iris_securitycelvq.py                    # Iris_test set example with celvq
 ├── iris_securityglvq.py                     # Iris_test set example with glvq
 ├── iris_securitygmlvq.py                    # Iris_test set example with gmlvq
 ├── iris_securitycelvq.py                    # Iris_test set example with celvq
-├── optimised_m.py                           # optimal search of hyperparameter(m)
+├── optimised_m.py                           # script for optimal search of hyperparameter(m)
 ├── label_security1.py                       # classification label security/certainty for LVQs
 ├── protocert.py                             # Auxilliary code
 └── README.md
