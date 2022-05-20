@@ -13,16 +13,13 @@ Classification label security is prototype based recall proceedure that determin
 
 ```
 .
-├── contour.py                               # Visualization of plots
-├── crt.py                                   # optimised algorithm for multiple reject thresholds for improving classification reliability
-├── crt_chow_iris.py                         # simulation of crt vs chow in optimal search of for threshold for improving classification reliability
+├── contour.py                               # Visualization of contour plots
 ├── iris_securitycelvq.py                    # Iris_test set example with celvq
 ├── iris_securityglvq.py                     # Iris_test set example with glvq
 ├── iris_securitygmlvq.py                    # Iris_test set example with gmlvq
 ├── iris_securitycelvq.py                    # Iris_test set example with celvq
-├── optimised_m.py                           # script for the optimal search of hyperparameter(m)
-├── procertnew.py                            # auxilliary script for crt usage
-├── label_security1.py                       # classification label security/certainty for lvq
+├── optimised_m.py                           # optimal search of hyperparameter(m)
+├── label_security1.py                       # classification label security/certainty for LVQs
 ├── protocert.py                             # Auxilliary code
 └── README.md
 ```
