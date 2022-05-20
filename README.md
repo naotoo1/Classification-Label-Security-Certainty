@@ -7,7 +7,7 @@
 # Classification-Label-Security-Certainty
 
 ## What is it?
-Classification label security determines the extent to which predicted labels from classification results can be trusted. The uncertainty surrounding classification labels is resolved by the security to which the classification is made. Therefore, classification label security is very significant for decision-making whenever we are encountered with a classification task.
+Classification label security determines the extent to which predicted labels from LVQs classification results can be trusted.
 
 ## File structure
 
