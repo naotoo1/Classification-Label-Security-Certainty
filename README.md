@@ -1,5 +1,5 @@
 [![Python: 3.9](https://img.shields.io/badge/python-3.9-blue.svg)](https://www.python.org/downloads/release/python-390/)
-[![Pytorch: 1.11](https://img.shields.io/badge/pytorch-1.11-blue.svg)](https://pytorch.org/blog/pytorch-1.11-released/)
+[![Pytorch: 1.11](https://img.shields.io/badge/pytorch-1.11-orange.svg)](https://pytorch.org/blog/pytorch-1.11-released/)
 [![Prototorch: 0.7.3](https://img.shields.io/badge/prototorch-0.7.3-blue.svg)](https://pypi.org/project/prototorch/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
@@ -25,14 +25,23 @@ Classification label security is prototype based recall proceedure that determin
 ```
 
 ## How to use?
-This implementation investigates the determination of the classification label security by utilizing fuzzy probabilistic assignments of Fuzzy c-means.
-The ```label_security1.py``` script is used for computing the classification label security of lvq with examples for **GLVQ**, **GMLVQ** and **CELVQ** models.
 
-The models are first trained using a training data and tested on a test data. So for every prediction from the models using a test data, the code returns the classification labels and their respective security/certainty. For optimal results,the fuzzifier(m) which is a hyperparamter in the classification label security computation is searched optimally by the method in ```optimised_m.py```. The search for an optimal m is based on the transitive fact which explains that the reliability of a model is linked to the preformance of the model which inturn correlates the security of the model.
+```python
+from label_security1 import LabelSecurity, LabelSecurityM, LabelSecurityLM 
 
-The module is imported with the **LabelSecurity Class** ,**LabelSecurityM Class** and **LabelSecurityLM Class** which is used to the compute the classification label security by calling on the methods in these Classes. LabelSecurity Class is used for **non matrix LVQ**, LabelSecurityM used for **matrix LVQ** and LabelSecurityLM used for **localized matrix LVQ**
+# Non matrix LVQs
+ label_security= LabelSecurity(x_test, class_labels, predict_results, model_prototypes, X)
+ print(label_security.label_sec_f(y_pred))
+```
 
-Examples are shown in the following python files (```Iris_security_glvq.py```, ```Iris_security_gmlvq.py``` and  ```Iris_security_celvq.py```)
+```python
+# Matrix and Local-Matrix LVQs
+label_security= LabelSecurityM(x_test, class_labels, model_prototypes, model_omega, X)
+print(label_security.label_security_m_f(y_pred))
+```
+
+
+The LVQ models are first trained using a training data. The learned prototypes are accessed and used to compute the classification label certainties of the test data.
 
 
 
