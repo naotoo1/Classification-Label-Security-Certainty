@@ -61,12 +61,6 @@ Classification results with reject and non-reject options based on the chow's ap
 <img src='https://user-images.githubusercontent.com/82911284/165192342-45d9fc5a-93d9-4d14-8be3-b2d281032af5.png'/>
 </p>
 
-## Simulation
-
-A simulated results from multiple reject thresholds for improving classification reliability using the CRT vs Chow is shown below for GLVQ
-
-![Figure_4](https://user-images.githubusercontent.com/82911284/165868376-edfd75fd-dc67-41f1-a75a-305f2a72e06f.png)
-
  
  Below is a plot indicating a diminishing trend of the classification lable security of a sample data point with increasing m hyperparameter for ```label_security1.py```
  
@@ -76,11 +70,3 @@ A simulated results from multiple reject thresholds for improving classification
  **GLVQ**, **GMLVQ** and **CELVQ**.
  
  ![clsoptimedm](https://user-images.githubusercontent.com/82911284/167135492-888cca27-87a4-49d9-855e-6364910cd541.png)
-
-
-## References
-
-<a id="1">[1]</a> 
-Fumera, G., Roli, F., & Giacinto, G. (2000, August). 
-Multiple reject thresholds for improving classification reliability. 
-In Joint IAPR International Workshops on Statistical Techniques in Pattern Recognition (SPR) and Structural and Syntactic Pattern Recognition (SSPR) (pp. 863-871). Springer, Berlin, Heidelberg.
