@@ -7,7 +7,7 @@
 # Classification-Label-Security-Certainty
 
 ## What is it?
-Classification label security is prototype based recall proceedure that determines the extent to which predicted labels from LVQs classification results can be trusted.
+Classification label security is a prototype-based recall procedure that determines the confidence of predicted labels from the Learning Vector Quantization family of advanced machine learning classification algorithms.
 
 ## File structure
 
